@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <!--HEADER-->
     <div class="main-container">
@@ -20,11 +22,11 @@
                 <div class="box-logo">
                     <img src="./logo/Booki.png" alt="logo_booki" class="logo-booki">
                 </div>
-                
+
                 <nav>
                     <div class="nav-bar-container">
                         <ul class="header-menu">
-                            <li class="hebergements"><a href="#hebergements"  title="Hébergements">Hébergements</a></li>
+                            <li class="hebergements"><a href="#hebergements" title="Hébergements">Hébergements</a></li>
                             <li class="activités"><a href="#activités" title="Activités">Activités</a></li>
                         </ul>
                     </div>
@@ -36,8 +38,24 @@
                     <p>En plein centre ville ou en plein nature </p>
                 </div>
             </section>
+            <!--!formulaire de recherche-->
+            <div class="search-form">
+                <form class="search-bar" method="get" action="#">
+                    <div class="icon-box">
+                        <label><i class="fa-solid fa-location-dot"></i></label>
+                    </div>
+                    <div class="search-city">
+                        <input type="text" placeholder="Marseille, France" title="tapez la recherche">
+                    </div>
+                    <button class="search-icon" type="button" aria-label="recherche">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="search" type="submit" id="search-text">Rechercher</button>
+                </form>
+            </div>
 
-                
-    
+
+
 </body>
+
 </html>
