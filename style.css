@@ -413,3 +413,17 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
+.hebergements {
+    background-color: var(--main-bg-color);
+    border-radius: 2rem;
+    box-sizing: border-box;
+    width: 65%;
+    padding: 3rem;
+}
+
+.populaires {
+    background-color: var(--main-bg-color);
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
