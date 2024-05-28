@@ -18,10 +18,6 @@ html {
     --transi200: 200ms;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
-
 /****** Body ***********/
 body {
     display: flex;
@@ -71,6 +67,7 @@ a {
     color: var(--main-bg-color)
 }
 
+
 /*fontsize*/
 
 h1 {
@@ -83,6 +80,38 @@ h1 {
 
 .h2-filter {
     font-size: 1.8rem;
+}
+
+.hebergements-and-populaires .card-title,
+.card-subtitle {
+    font-size: clamp(1.3rem, 1.2vw, 1.6rem);
+}
+
+h3,
+li {
+    font-size: 1.6rem;
+}
+
+.info-bar p {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+p,
+a {
+    font-weight: 500;
+}
+
+.card-rating {
+    font-size: 1.2rem;
+}
+
+i {
+    color: #0065FC;
+    font-size: 1.5rem;
 }
 
 /*** header ***/
@@ -375,7 +404,6 @@ p {
     font-size: 1.8rem;
     font-weight: 700;
 }
-
 
 /****** Hebergements And Populaires ***********/
 .hebergements-a-marseille-and-populaires {
