@@ -503,3 +503,47 @@ p {
 .popular-container .card-rating {
     margin-bottom: 0.5rem;
 }
+
+/****** Activities ***********/
+
+.activities {
+    margin: 3.5rem 3rem;
+}
+
+.activities-cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.activities-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activities-cards .card {
+    width: 23%;
+    height: 44rem;
+}
+
+.activities-cards img {
+    width: 100%;
+    height: 38rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border: none;
+}
+
+.activities-cards .card-content {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.activities-cards .card-subtitle {
+    margin: 0;
+}
+
+.activities-cards .card-rating {
+    margin-bottom: 5px;
+}
