@@ -406,12 +406,12 @@ p {
 }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-a-marseille-and-populaires {
+.hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-a-marseille {
+.hebergements {
     background-color: var(--main-bg-color);
     border-radius: 2rem;
     box-sizing: border-box;
@@ -419,7 +419,7 @@ p {
     padding: 3rem;
 }
 
-.les-plus-populaires {
+.populaires {
     background-color: var(--main-bg-color);
     border-radius: 2rem;
     box-sizing: border-box;
@@ -432,6 +432,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .hebergements-cards {
@@ -476,7 +477,7 @@ p {
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
-
+    
 }
 
 /****** Populaires ***********/
