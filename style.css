@@ -471,6 +471,11 @@ p {
     margin-top: 3rem;
 }
 
+.button-hebergements a {
+    font-weight: 700 
+}
+/* pour mettre le boutton afficher plus gras */
+
 .hebergements-cards .card-subtitle {
     margin: 0;
 }
