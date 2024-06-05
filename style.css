@@ -85,6 +85,9 @@ h1 {
 .hebergements-and-populaires .card-title,
 .card-subtitle {
     font-size: clamp(1.3rem, 1.2vw, 1.6rem);
+    padding: 4px
+        /**espace entre le titre et le sous titre**/
+    ;
 }
 
 h3,
@@ -472,17 +475,22 @@ p {
 }
 
 .button-hebergements a {
-    font-weight: 700 
+    font-weight: 700
 }
+
 /* pour mettre le boutton afficher plus gras */
 
 .hebergements-cards .card-subtitle {
     margin: 0;
 }
 
+/**Modifications**/
+
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
-    
+    padding: 4px;
+    /**espace entre les sous titres et les étoiles**/
+
 }
 
 /****** Populaires ***********/
