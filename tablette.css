@@ -18,6 +18,20 @@
         padding: 3rem 0;
     }
 
+    /*FILTER*/
+
+    .filter-bar {
+        display: block;
+    }
+
+    .filter-bar h2 {
+        padding-bottom: 2rem;
+    }
+
+    .filter-container {
+        justify-content: space-between;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
