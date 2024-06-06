@@ -32,6 +32,8 @@
         justify-content: space-between;
     }
 
+    /*HEBERGEMENTS*/
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -39,6 +41,12 @@
     .hebergements {
         width: 100%;
     }
+
+    .button-hebergements {
+        margin: 3rem 0;
+    }
+
+    /*POPULAiRES*/
 
     .populaires {
         width: 100%;
@@ -49,6 +57,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .populaires-cards img {
+        width: 40%;
     }
 
     .populaires-cards a {
