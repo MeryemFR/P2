@@ -1,5 +1,23 @@
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    * {
+        margin: 0;
+    }
+
+    body {
+        max-width: 1024px;
+    }
+
+    /*NAV-BAR*/
+
+    .nav-header {
+        height: 8rem;
+    }
+
+    .box-logo {
+        padding: 3rem 0;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
