@@ -1,0 +1,132 @@
+/* Mobile styles in mobile.css (max-width: 767.98px) */
+
+
+@media (min-width: 320px)and (max-width: 767.98px) {
+
+    /*Général et fontsize*/
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        max-width: 767.98px;
+        min-width: 320px;
+
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    html {
+        font-size: clamp(8px, 3vw, 10px);
+    }
+
+    h1 {
+
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p,
+    a {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .footer h3 {
+        font-size: 1.8rem;
+    }
+
+    i {
+        color: #0065FC;
+        font-size: 4rem;
+    }
+
+    /*Header*/
+
+    /*nav bar */
+
+    .headline {
+        padding: 3.5rem 2rem;
+    }
+
+    .headline p {
+        font-size: 1.6rem;
+    }
+
+    .nav-bar-container {
+        width: 100%;
+        display: flex;
+    }
+
+    .header-menu {
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-menu li {
+        width: auto;
+        padding: 60 0 0;
+        display: inline-block;
+
+    }
+
+
+    .header-menu li a {
+        display: block;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+
+    .header-menu a::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #f2f2f2;
+        width: 0;
+        top: 20rem;
+        left: 0;
+
+    }
+
+    nav a:hover {
+        border-top: none;
+    }
+
+    .heberg a:hover:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #0065FC;
+        top: 20rem;
+        width: 50%;
+    }
+
+    .activ a:hover:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #0065FC;
+        top: 20rem;
+        width: calc(100% - 50%);
+        left: calc(100% - 50%);
+    }
+
+    .nav-header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    nav a:hover {
+        padding-top: 10px;
+    }
+
+    .box-logo {
+        margin: 3rem;
+    }
