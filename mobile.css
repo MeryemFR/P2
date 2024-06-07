@@ -288,3 +288,66 @@
         margin: unset;
         margin-top: 1.5rem;
     }
+
+    /*populaires*/
+
+    .populaires {
+        width: 100%;
+        border-radius: 0;
+        padding: 3rem 2rem;
+    }
+
+    .populaires-title {
+        margin: unset;
+        margin-bottom: 1.5rem;
+    }
+
+    .populaires-title i {
+        font-size: 1.8rem;
+    }
+
+    .populaires-cards {
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    .populaires-cards .card {
+        display: flex;
+        height: 100%;
+    }
+
+    .popular-container {
+        row-gap: 1.5rem;
+        padding: unset;
+    }
+
+    .popular-container img {
+        height: 14.6rem;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+    .card-content {
+        height: 100%;
+        gap: 0.8rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .hebergements-cards .card-title {
+        margin: unset;
+    }
+
+    .hebergements-cards .card-rating {
+        margin: unset;
+    }
+
+    .card-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .card-txt h3,
+    p {
+        font-size: 1.6rem;
+    }
