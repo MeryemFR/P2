@@ -226,3 +226,18 @@
         min-width: 4rem;
         font-weight: 50;
     }
+
+    /*info-bar*/
+
+    .icon-info-bar {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+    }
+
+    .icon-info-bar i {
+        text-align: center;
+        min-width: 2.2rem;
+        font-size: 1.4rem;
+
+    }
