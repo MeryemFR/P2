@@ -396,3 +396,27 @@
         font-size: 1.6rem;
         font-weight: 700;
     }
+
+    /*footer*/
+
+    .footer {
+        padding: 3rem 0 0 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        row-gap: 5rem;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-nav h3,
+    li {
+        padding: 0.5rem 1rem;
+    }
+}
