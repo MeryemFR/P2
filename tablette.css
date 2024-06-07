@@ -46,32 +46,37 @@
         margin: 3rem 0;
     }
 
-    /*POPULAiRES*/
+    /*POPULAR*/
 
     .populaires {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .populaires-cards{
+        width: 32%;
     }
 
     .populaires-cards img {
         width: 40%;
     }
 
-    .populaires-cards a {
+    .popular-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .popular-container a {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .popular-container .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .popular-container .card-subtitle {
         font-size: 13px;
     }
 
