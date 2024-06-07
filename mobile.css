@@ -241,3 +241,50 @@
         font-size: 1.4rem;
 
     }
+
+    /*hebergements*/
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+        padding-top: 1.5rem;
+        margin: 0;
+        gap: 1.5rem;
+    }
+
+
+    .hebergements {
+        width: 100%;
+        order: 2;
+        padding: 0 2.5rem;
+        background-color: #ffffff;
+        padding: 2rem;
+    }
+
+    .hebergements-title {
+        padding: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .hebergements-cards {
+        row-gap: 1.5rem;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+
+    .hebergements-cards img {
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+
+    .card {
+        border-radius: 2rem;
+        width: 99%;
+    }
+
+    .button-hebergements {
+        margin: unset;
+        margin-top: 1.5rem;
+    }
