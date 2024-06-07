@@ -131,3 +131,42 @@
     .box-logo {
         margin: 3rem;
     }
+
+    /*FILTER*/
+
+    .main-filter {
+        max-width: initial;
+        margin: 3.5rem 2rem;
+    }
+
+    .info-bar {
+        margin: 2rem;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .filter-container {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .h2-filter {
+        align-self: flex-start;
+    }
+
+    .filter {
+        width: 48%;
+    }
+
+    .filter p {
+        font-size: 1.4rem;
+    }
+
+    .filter i {
+        font-size: 2.2rem;
+    }
