@@ -645,10 +645,6 @@ footer li :hover {
         justify-content: space-between;
     }
 
-    .populaires-cards a {
-        width: 30%;
-    }
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
