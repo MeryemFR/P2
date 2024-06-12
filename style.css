@@ -621,40 +621,23 @@ footer li :hover {
     color: #0065FC;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+/*Main title, Hebergement title, activités title*/
 
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.hebergements-title,
+.activities-title,
+.h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+
+/* Media queries */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    body {
+        max-width: 1440px;
+    }
 }
