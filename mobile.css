@@ -51,7 +51,7 @@
 
     /*nav bar */
 
-    .headline {
+    /*.headline {
         padding: 3.5rem 2rem;
     }
 
@@ -129,7 +129,44 @@
     .box-logo {
         margin: 3rem;
     }
+/*HEADER SARAH TEST*/
 
+   .header-nav {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    }
+   .logo-box {
+    margin: 30px;
+    }
+
+    .nav-list-container {
+        width: 100%;
+    }
+    .nav-list{
+        display: contents;
+    }
+    .nav-list li{
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 14px;
+        padding-top: 0px; 
+    }
+    /*** RECHERCHE ***/
+    .search-form{
+        justify-content: center;
+    }
+    .search-bar{
+        padding-left: 20px;
+    }
+    .search-mobile{
+        display: inline-block;
+        position: relative;
+        left: -20px;
+    }
+    .search {
+        display: none;
+    }
     /*FILTER*/
 
     .main-filter {
