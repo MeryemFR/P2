@@ -39,6 +39,7 @@ a {
     text-decoration: none;
 }
 
+
 .card {
     background-color: white;
     border-radius: 2rem;
@@ -147,6 +148,7 @@ i {
     top: -2rem;
     left: 0;
     transition: width var(--transi200) ease;
+    
 }
 
 .header-menu a:hover {
