@@ -72,7 +72,7 @@
     .header-menu li {
         width: auto;
         padding: 0;
-        display: inline-block;
+        display: inline-block; /* Affichage en ligne */
     }
 
     .header-menu li a {
@@ -81,7 +81,7 @@
         font-size: 1.6rem;
     }
 
-
+    /*::before pour les liens dans le menu de navigation */
     .header-menu a::before {
         content: "";
         position: absolute;
@@ -97,7 +97,7 @@
         border-top: none;
     }
 
-
+    /* Effet ligne sous les liens "heberg" lors du survol */
     .heberg a:hover:after {
         content: "";
         position: absolute;
@@ -107,12 +107,14 @@
         width: 50%;
     }
 
+    /* Effet ligne sous les liens "activ" lors du survol */
     .activ a:hover:after {
         content: "";
         position: absolute;
         height: 2px;
         background-color: #0065FC;
         top: 20rem;
+        /* Positionnement par rapport au haut */
         width: calc(100% - 50%);
         left: calc(100% - 50%);
     }
@@ -132,9 +134,12 @@
 
     .header-menu li.active a {
         font-weight: bold;
+        /* en gras */
         color: #000;
+        /* Couleur de texte noire */
     }
 
+    /* Pseudo-élément ::after pour le lien actif dans le menu de navigation */
     .header-menu li.active::after {
         content: '';
         display: block;
@@ -149,6 +154,7 @@
 
     .header-menu li a {
         border-bottom: 3px solid blue;
+        /* Bordure inférieure bleue*/
 
     }
 

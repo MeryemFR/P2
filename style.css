@@ -1,4 +1,7 @@
 /****** General ***********/
+/* Applique une police de caractère par défaut à toute la page,
+   supprime les marges et les paddings par défaut,
+   et fixe le box-sizing à border-box pour inclure les bordures et les paddings dans les dimensions des éléments */
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -11,6 +14,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/*  Ces variables peuvent être réutilisées dans tout le fichier CSS */
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -19,6 +24,7 @@ html {
 }
 
 /****** Body ***********/
+
 body {
     display: flex;
     justify-content: center;
@@ -27,6 +33,7 @@ body {
     margin: 0 auto;
 }
 
+
 .main-container {
     width: 100%;
     max-width: 144rem;
@@ -34,19 +41,24 @@ body {
     box-sizing: border-box;
 }
 
+/* Style pour les liens :
+   - Hérite de la couleur du texte parent
+   - Supprime le soulignement par défaut */
 a {
     color: inherit;
     text-decoration: none;
 }
-
 
 .card {
     background-color: white;
     border-radius: 2rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.016));
     transition: all var(--transi200) ease-in-out;
+    /* Transition fluide sur toutes les propriétés avec une durée de 200ms*/
 }
 
+/* Effet de survol pour les cartes :
+   - Agrandit légèrement la carte (scale 1.05) */
 .card:hover {
     transform: scale(1.05);
 }
@@ -64,6 +76,8 @@ a {
     font-weight: 700;
 }
 
+/* Style pour les étoiles neutres :
+   - Applique la couleur de fond principale définie dans les variables */
 .neutral-star {
     color: var(--main-bg-color)
 }
@@ -134,13 +148,15 @@ i {
 .header-menu {
     display: flex;
     gap: 7rem;
+    /* Espacement entre les éléments */
     width: 100%;
     list-style: none;
+    /* Supprime les puces */
     padding: 0;
 }
 
 .header-menu a::after {
-    content: "";
+    content: ""; 
     position: absolute;
     height: 2px;
     background-color: #0065FC;
@@ -148,7 +164,7 @@ i {
     top: -2rem;
     left: 0;
     transition: width var(--transi200) ease;
-    
+
 }
 
 .header-menu a:hover {
@@ -158,6 +174,7 @@ i {
 .header-menu a:hover::after {
     width: 100%;
 }
+/* Ligne pleine largeur au survol */
 
 
 .logo-booki {
@@ -191,7 +208,7 @@ i {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permet de passer à la ligne */
     justify-content: flex-end;
     gap: 50px;
     margin: 10px;
@@ -285,7 +302,7 @@ p {
 }
 
 .fa-magnifying-glass {
-    color: #ffffff;
+    color: #ffffff; /* Couleur de l'icône */
 }
 
 .search {
@@ -294,7 +311,7 @@ p {
     border: 1px solid #0065fc;
     border-radius: 0 1.5rem 1.5rem 0;
     color: #ffffff;
-    cursor: pointer;
+    cursor: pointer; /* Curseur de pointeur */
     font-size: 1.7em;
     font-weight: 700;
 }
@@ -421,7 +438,7 @@ p {
     border-radius: 2rem;
     box-sizing: border-box;
     width: 65%;
-    padding: 3rem;
+    padding: 3rem; /* Espace intérieur */
 }
 
 .populaires {
@@ -443,7 +460,7 @@ p {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 3rem;
+    row-gap: 3rem; /* Espacement vertical entre les lignes de cartes */
     align-items: center;
     justify-content: space-between;
     padding-top: 3rem;
@@ -454,7 +471,7 @@ p {
 }
 
 .hebergements-cards img {
-    object-fit: cover;
+    object-fit: cover; /* Redimensionnement de l'image tout en conservant ses proportions */
     width: 100%;
     height: 12.4rem;
     box-sizing: border-box;
@@ -473,11 +490,11 @@ p {
 }
 
 .button-hebergements {
-    margin-top: 3rem;
+    margin-top: 3rem; /* Espacement en haut du bouton */
 }
 
 .button-hebergements a {
-    font-weight: 700
+    font-weight: 700 /* Police plus grasse pour le lien */
 }
 
 /* pour mettre le boutton afficher plus gras */
@@ -527,7 +544,7 @@ p {
 }
 
 .popular-container .card-content {
-    width: 67%;
+    width: 67%; /* Largeur du contenu de la carte */
     height: auto;
     padding: 0.8rem;
     display: flex;
@@ -580,8 +597,8 @@ p {
 }
 
 .activities-cards .card-content {
-    padding-left: 1.5rem;
-    padding-top: 1.5rem;
+    padding-left: 1.5rem; /* Espacement intérieur à gauche du contenu */
+    padding-top: 1.5rem; /* Espacement intérieur à en haut du contenu */
 }
 
 .activities-cards .card-subtitle {
@@ -600,7 +617,7 @@ p {
 }
 
 .footer-nav {
-    display: flex;
+    display: flex; /* Affichage en ligne des éléments de la navigation */
     justify-content: space-between;
     background-color: #F2F2F2;
 }
@@ -616,11 +633,12 @@ p {
 }
 
 .footer-container ul li {
-    padding: 1.5rem 1.5rem 0;
+    padding: 1.5rem 1.5rem 0; /* Espacement intérieur haut et bas */
 }
 
+/* Styles pour les liens survolés dans le footer */
 footer li :hover {
-    color: #0065FC;
+    color: #0065FC; /* Couleur du texte au survol */
 }
 
 
