@@ -155,7 +155,7 @@ i {
     padding: 0;
 }
 
-.header-menu a::after {
+/* .header-menu a::after {
     content: ""; 
     position: absolute;
     height: 2px;
@@ -165,15 +165,15 @@ i {
     left: 0;
     transition: width var(--transi200) ease;
 
-}
+} */
 
 .header-menu a:hover {
     color: #0065FC;
 }
 
-.header-menu a:hover::after {
+/* .header-menu a:hover::after {
     width: 100%;
-}
+} */
 /* Ligne pleine largeur au survol */
 
 

@@ -72,17 +72,20 @@
     .header-menu li {
         width: auto;
         padding: 0;
-        display: inline-block; /* Affichage en ligne */
+        display: inline-block;
+        height: 24px;
     }
 
     .header-menu li a {
         display: block;
         width: 100%;
         font-size: 1.6rem;
+        border-bottom: solid 3px blue;
+        padding-bottom: 24px;
     }
 
     /*::before pour les liens dans le menu de navigation */
-    .header-menu a::before {
+    /* .header-menu a::before {
         content: "";
         position: absolute;
         height: 2px;
@@ -91,56 +94,58 @@
         top: 20rem;
         left: 0;
 
-    }
+    } */
 
     nav a:hover {
         border-top: none;
     }
 
     /* Effet ligne sous les liens "heberg" lors du survol */
-    .heberg a:hover:after {
+    /* .heberg a:hover:after {
         content: "";
         position: absolute;
         height: 2px;
         background-color: #0065FC;
         top: 20rem;
         width: 50%;
-    }
+    } */
 
     /* Effet ligne sous les liens "activ" lors du survol */
-    .activ a:hover:after {
+    /* .activ a:hover:after {
         content: "";
         position: absolute;
         height: 2px;
         background-color: #0065FC;
         top: 20rem;
-        /* Positionnement par rapport au haut */
+        Positionnement par rapport au haut 
         width: calc(100% - 50%);
         left: calc(100% - 50%);
-    }
+    } */
 
     .nav-header {
         flex-direction: column;
         height: fit-content;
+        border-bottom: solid 3px #f2f2f2;
     }
 
     nav a:hover {
         padding-top: 10px;
+        border-bottom: solid 3px blue;
     }
 
     .box-logo {
         margin: 3rem;
     }
 
-    .header-menu li.active a {
+    /* .header-menu li.active a {
         font-weight: bold;
-        /* en gras */
+        en gras 
         color: #000;
-        /* Couleur de texte noire */
-    }
+        Couleur de texte noire 
+    } */
 
     /* Pseudo-élément ::after pour le lien actif dans le menu de navigation */
-    .header-menu li.active::after {
+    /* .header-menu li.active::after {
         content: '';
         display: block;
         width: 100%;
@@ -149,14 +154,14 @@
         position: absolute;
         bottom: 0;
         left: 0;
-    }
+    } */
 
 
-    .header-menu li a {
+    /* .header-menu li a {
         border-bottom: 3px solid blue;
-        /* Bordure inférieure bleue*/
+         Bordure inférieure bleue
 
-    }
+    } */
 
 
     /*FILTER*/
