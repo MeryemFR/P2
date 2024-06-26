@@ -50,7 +50,6 @@
     /*Header*/
 
     /*nav bar */
-
     .headline {
         padding: 3.5rem 2rem;
     }
@@ -73,54 +72,26 @@
         width: auto;
         padding: 0;
         display: inline-block;
-        height: 24px;
+        height: 30px;
     }
 
     .header-menu li a {
         display: block;
         width: 100%;
         font-size: 1.6rem;
-        border-bottom: solid 3px blue;
-        padding-bottom: 24px;
+        /* border-bottom: solid 3px blue; */
+        /* padding-bottom: 20px; */
+        height: 41px;
     }
 
-    /*::before pour les liens dans le menu de navigation */
-    /* .header-menu a::before {
-        content: "";
-        position: absolute;
-        height: 2px;
-        background-color: #f2f2f2;
-        width: 0;
-        top: 20rem;
-        left: 0;
-
-    } */
+    .header-menu li a:hover {
+        border-bottom: solid 3px #0065FC;
+        padding-bottom: 20px;
+    }
 
     nav a:hover {
         border-top: none;
     }
-
-    /* Effet ligne sous les liens "heberg" lors du survol */
-    /* .heberg a:hover:after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        background-color: #0065FC;
-        top: 20rem;
-        width: 50%;
-    } */
-
-    /* Effet ligne sous les liens "activ" lors du survol */
-    /* .activ a:hover:after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        background-color: #0065FC;
-        top: 20rem;
-        Positionnement par rapport au haut 
-        width: calc(100% - 50%);
-        left: calc(100% - 50%);
-    } */
 
     .nav-header {
         flex-direction: column;
@@ -137,31 +108,6 @@
         margin: 3rem;
     }
 
-    /* .header-menu li.active a {
-        font-weight: bold;
-        en gras 
-        color: #000;
-        Couleur de texte noire 
-    } */
-
-    /* Pseudo-élément ::after pour le lien actif dans le menu de navigation */
-    /* .header-menu li.active::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: blue;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    } */
-
-
-    /* .header-menu li a {
-        border-bottom: 3px solid blue;
-         Bordure inférieure bleue
-
-    } */
 
 
     /*FILTER*/
@@ -377,7 +323,6 @@
     .card-txt {
         display: flex;
         flex-direction: column;
-        gap: 0.8rem;
     }
 
     .card-txt h3,

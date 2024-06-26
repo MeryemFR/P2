@@ -155,26 +155,10 @@ i {
     padding: 0;
 }
 
-/* .header-menu a::after {
-    content: ""; 
-    position: absolute;
-    height: 2px;
-    background-color: #0065FC;
-    width: 0;
-    top: -2rem;
-    left: 0;
-    transition: width var(--transi200) ease;
-
-} */
 
 .header-menu a:hover {
     color: #0065FC;
 }
-
-/* .header-menu a:hover::after {
-    width: 100%;
-} */
-/* Ligne pleine largeur au survol */
 
 
 .logo-booki {
