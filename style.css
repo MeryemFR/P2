@@ -132,7 +132,6 @@ i {
     font-size: 1.5rem;
 }
 
-/*** header ***/
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -148,18 +147,64 @@ i {
 .header-menu {
     display: flex;
     gap: 7rem;
-    /* Espacement entre les éléments */
     width: 100%;
     list-style: none;
-    /* Supprime les puces */
     padding: 0;
 }
 
+.header-menu a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #0065FC;
+    width: 0;
+    top: -2rem;
+    left: 0;
+    transition: width var(--transi200) ease;
+}
 
 .header-menu a:hover {
     color: #0065FC;
 }
 
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+
+/*** header ***/
+/* .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+.nav-bar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    gap: 7rem;
+    /* Espacement entre les éléments */
+/* width: 100%;
+    list-style: none; */
+/* Supprime les puces */
+/* padding: 0; */
+/* } */
+
+
+
+/* 
+.header-menu a:hover {
+    color: #0065FC;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+} */
 
 .logo-booki {
     width: 61.09px;
@@ -192,13 +237,41 @@ i {
 
 nav ul {
     display: flex;
-    flex-wrap: wrap; /* Permet de passer à la ligne */
+    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 50px;
     margin: 10px;
     font-size: 23px;
     list-style: none;
 }
+
+/* .headline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+    gap: 0.8rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; */
+/* Permet de passer à la ligne */
+/* justify-content: flex-end;
+    gap: 50px;
+    margin: 10px;
+    font-size: 23px;
+    list-style: none;
+} */
+
+/* 
+nav a:hover {
+    color: #0065FC;
+    border-top: solid #0065FC;
+    padding-top: 28px;
+} */
 
 nav a:hover {
     color: #0065FC;
@@ -286,7 +359,8 @@ p {
 }
 
 .fa-magnifying-glass {
-    color: #ffffff; /* Couleur de l'icône */
+    color: #ffffff;
+    /* Couleur de l'icône */
 }
 
 .search {
@@ -295,7 +369,8 @@ p {
     border: 1px solid #0065fc;
     border-radius: 0 1.5rem 1.5rem 0;
     color: #ffffff;
-    cursor: pointer; /* Curseur de pointeur */
+    cursor: pointer;
+    /* Curseur de pointeur */
     font-size: 1.7em;
     font-weight: 700;
 }
@@ -422,7 +497,8 @@ p {
     border-radius: 2rem;
     box-sizing: border-box;
     width: 65%;
-    padding: 3rem; /* Espace intérieur */
+    padding: 3rem;
+    /* Espace intérieur */
 }
 
 .populaires {
@@ -444,7 +520,8 @@ p {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 3rem; /* Espacement vertical entre les lignes de cartes */
+    row-gap: 3rem;
+    /* Espacement vertical entre les lignes de cartes */
     align-items: center;
     justify-content: space-between;
     padding-top: 3rem;
@@ -455,7 +532,8 @@ p {
 }
 
 .hebergements-cards img {
-    object-fit: cover; /* Redimensionnement de l'image tout en conservant ses proportions */
+    object-fit: cover;
+    /* Redimensionnement de l'image tout en conservant ses proportions */
     width: 100%;
     height: 12.4rem;
     box-sizing: border-box;
@@ -474,11 +552,13 @@ p {
 }
 
 .button-hebergements {
-    margin-top: 3rem; /* Espacement en haut du bouton */
+    margin-top: 3rem;
+    /* Espacement en haut du bouton */
 }
 
 .button-hebergements a {
-    font-weight: 700 /* Police plus grasse pour le lien */
+    font-weight: 700
+        /* Police plus grasse pour le lien */
 }
 
 /* pour mettre le boutton afficher plus gras */
@@ -528,7 +608,8 @@ p {
 }
 
 .popular-container .card-content {
-    width: 67%; /* Largeur du contenu de la carte */
+    width: 67%;
+    /* Largeur du contenu de la carte */
     height: auto;
     padding: 0.8rem;
     display: flex;
@@ -581,8 +662,10 @@ p {
 }
 
 .activities-cards .card-content {
-    padding-left: 1.5rem; /* Espacement intérieur à gauche du contenu */
-    padding-top: 1.5rem; /* Espacement intérieur à en haut du contenu */
+    padding-left: 1.5rem;
+    /* Espacement intérieur à gauche du contenu */
+    padding-top: 1.5rem;
+    /* Espacement intérieur à en haut du contenu */
 }
 
 .activities-cards .card-subtitle {
@@ -601,7 +684,8 @@ p {
 }
 
 .footer-nav {
-    display: flex; /* Affichage en ligne des éléments de la navigation */
+    display: flex;
+    /* Affichage en ligne des éléments de la navigation */
     justify-content: space-between;
     background-color: #F2F2F2;
 }
@@ -617,12 +701,14 @@ p {
 }
 
 .footer-container ul li {
-    padding: 1.5rem 1.5rem 0; /* Espacement intérieur haut et bas */
+    padding: 1.5rem 1.5rem 0;
+    /* Espacement intérieur haut et bas */
 }
 
 /* Styles pour les liens survolés dans le footer */
 footer li :hover {
-    color: #0065FC; /* Couleur du texte au survol */
+    color: #0065FC;
+    /* Couleur du texte au survol */
 }
 
 

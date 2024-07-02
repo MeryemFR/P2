@@ -47,10 +47,87 @@
         font-size: 4rem;
     }
 
+
+    .headline {
+        padding: 3.5rem 2rem;
+    }
+
+    .headline p {
+        font-size: 1.6rem;
+    }
+
+    .nav-bar-container {
+        width: 100%;
+        display: flex;
+    }
+
+    .header-menu {
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-menu li {
+        width: auto;
+        padding: 60 0 0;
+        display: inline-block;
+
+    }
+
+
+    .header-menu li a {
+        display: block;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+
+    .header-menu a::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #f2f2f2;
+        width: 0;
+        top: 20rem;
+        left: 0;
+
+    }
+
+    nav a:hover {
+        border-top: none;
+    }
+
+    .heberg a:hover:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #0065FC;
+        top: 20rem;
+        width: 50%;
+    }
+
+    .activ a:hover:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background-color: #0065FC;
+        top: 20rem;
+        width: calc(100% - 50%);
+        left: calc(100% - 50%);
+    }
+
+    .nav-header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    nav a:hover {
+        padding-top: 10px;
+    }
+
     /*Header*/
 
     /*nav bar */
-    .headline {
+    /* .headline {
         padding: 3.5rem 2rem;
     }
 
@@ -80,16 +157,16 @@
         width: 100%;
         font-size: 1.6rem;
         /* border-bottom: solid 3px blue; */
-        /* padding-bottom: 20px; */
-        height: 41px;
-    }
+    /* padding-bottom: 20px; */
+    /* height: 41px;
+    } */
 
-    .header-menu li a:hover {
+    /* .header-menu li a:hover {
         border-bottom: solid 3px #0065FC;
         padding-bottom: 20px;
-    }
+    } */
 
-    nav a:hover {
+    /* nav a:hover {
         border-top: none;
     }
 
@@ -97,12 +174,12 @@
         flex-direction: column;
         height: fit-content;
         border-bottom: solid 3px #f2f2f2;
-    }
+    } */
 
-    nav a:hover {
+    /* nav a:hover {
         padding-top: 10px;
         border-bottom: solid 3px blue;
-    }
+    } */
 
     /* 
     .box-logo {
@@ -143,8 +220,7 @@
     }
 
     .filter p {
-        /* font-size: 1.4rem; */
-        font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+        font-size: 1.4rem;
     }
 
     .filter i {
