@@ -103,7 +103,8 @@
         padding-top: 10px;
         border-bottom: solid 3px blue;
     }
-/* 
+
+    /* 
     .box-logo {
         margin: 3rem;
     } */
@@ -153,6 +154,11 @@
 
     .search-bar {
         margin: 7rem 0;
+        /* modification */
+        width: 100%;
+        /* Utilise 100% de la largeur de l'écran */
+        max-width: 600px;
+        /* Limite la largeur max */
     }
 
     .search-icon {
@@ -167,6 +173,12 @@
 
     .search {
         display: none;
+    }
+
+    /* modification */
+    .search-city {
+        flex-grow: 1;
+        /* Permet à l'input de prendre tout l'espace dispo */
     }
 
     .search-city input {
